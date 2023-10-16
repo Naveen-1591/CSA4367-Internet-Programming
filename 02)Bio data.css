@@ -1,0 +1,11 @@
+table th,td
+{
+	border:2px solid black;
+	width:100px;
+	length:100px;
+	size:100px;
+}
+th,td
+{
+	background-color:white;
+}
