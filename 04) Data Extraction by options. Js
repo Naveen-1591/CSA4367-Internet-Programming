@@ -1,0 +1,6 @@
+document.getElementById('dropdown').addEventListener('change', function() {
+    var selectedOption = this.options[this.selectedIndex];
+    if (selectedOption.value !== '#') {
+        window.location.href = selectedOption.value;
+    }
+});
