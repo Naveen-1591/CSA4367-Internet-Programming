@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Menu</title>
+</head>
+<body>
+<h1><center>MY MENU</center></h1>
+<select id="dropdown" onchange="window.location.href=this.value">">
+    <option value="#">Select Student Name</option>
+    <option value="Bio data.html">Naveen</option>
+    <option value="Letter.html">Navii Reddy</option>
+    <option value="indian.html">Flag</option>
+</select>
+</body>
+</html>
