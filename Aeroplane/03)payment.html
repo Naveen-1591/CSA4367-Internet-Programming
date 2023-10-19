@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <script>
+        function showAlert() {
+            
+            window.location.href = "pay bill.html"; 
+        }
+    </script>
+</head>
+<body style="background-color:yellow">
+    <h1><center>CARD DETAILS</center></h1><br><br>
+<center>
+    <form action="YOUR_PAYMENT_GATEWAY_URL" method="post">
+	<label for="name">Cardholder Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+
+        <label for="expDate">Expiration Date:</label>
+        <input type="text" id="expDate" name="expDate" placeholder="MM/YY" required><br><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+
+    </form>
+<center>
+   <form>
+        <button type="button" onclick="showAlert()">pay</button>
+    </form>
+</body>
+</html>

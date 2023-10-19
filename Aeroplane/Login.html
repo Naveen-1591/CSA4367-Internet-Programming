@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> RESERVATION DETAILS </title>
+</head>
+<body style="background-color:yellow">
+	<h1><center>RESERVATION FORM DETAILS</center></h1>
+	<img src="C:\xampp\htdocs\Aeroplane\flight.png" width="500" height="300" align=Right>
+FIRST NAME:<input type="text" id="First name" name="First name"><br><br>
+LAST NAME:<input type="text" id="Last name" name="Last name"><br><br>
+EMAIL:<input type="email" id="email" name="email"><br><br>
+PHONE NUMBER:<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+ADDRESS:<type="text" id="address" name="address"><br><br>
+ 	<textarea id="text" name="address" rows="4" cols="50"> </textarea>
+	<p>PLEASE SELECT YOUR FLIGHT CATEGORY:</p>
+
+	<input type="radio" id="International flight"  value="International flight">
+  	<label for="International flight">International flight</label><br>
+
+  	<input type="radio" id="Domestic flight" value="Domestic flight">
+  	<label for="Domestic flight">Domestic flight</label><br><br>
+
+Departure date:<input type="date" id="Departure date" name="Departure date"><br><br>
+Return date:<input type="date" id="Return date" name="Return date"><br><br>
+	<label for="">Departing from:</label>
+<select name="select" id="select">
+  	<option value="select">select</option>
+  	<option value="India">India</option>
+  	<option value="Japan">Japan</option>
+  	<option value="south Korea">south Korea</option>
+  	<option value="Australia">Australia</option>
+</select>
+CITY:<input type="text" id="city" name="city"><br><br>
+<label for="">Destination:</label>
+	<select name="select" id="select">
+  		<option value="select">select</option>
+  		<option value="India">India</option>
+  		<option value="Japan">Japan</option>
+  		<option value="south Korea">south Korea</option>
+  		<option value="Australia">Australia</option>
+</select>
+CITY:<input type="text" id="city" name="city"><br><br>
+<label for="">Select flight:</label>
+	<select name="select" id="select">
+  		<option value="select">select</option>
+  		<option value="Indigo">Indigo</option>
+  		<option value="Vistara">Vistara</option>
+  		<option value="Air India">Air India</option>
+  		<option value="Spice Jet">Spice Jet</option>
+</select>
+<label for="">Type of journey:</label>
+	<select name="select" id="select">
+  		<option value="select">select</option>
+  		<option value="One Way">One Way</option>
+  		<option value="Round Trip">Round Trip</option>
+</select><br><br>
+<button onclick="window.location.href='payment.html'";>NEXT</button>
+
+</body>
+</html>

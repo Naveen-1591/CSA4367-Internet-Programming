@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank you</title>
+    <style>
+        body{
+background-image:url("Thank.png");
+background-size:cover;
+backgorund-repeat:no-repeat;
+color:yellow;
+}
+    </style>
+</head>
+<body>
+    <center><h1>THANK YOU FOR RESERVATION</h1></center><center><h1> HAVE A NICE TRIP</h1></center><br>
+    <center><button id="okButton">OK</button></center>
+
+    <script>
+        document.getElementById('okButton').addEventListener('click', function() {
+            alert('Your data is recorded');
+            window.location.href = 'http://localhost/Aeroplane/Details.php';
+        });
+    </script>
+</body>
+</html>
