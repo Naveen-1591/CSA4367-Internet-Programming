@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bus</title>
+    <style>
+        body {
+            background-image: url('map.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            margin: 1;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1><center><b>BUS DETAILS<b></center><br></h1>
+    <center>
+        <dd>FROM:<input type="text" id="from"><br><br></dd>
+        <dd>To  :<input type="text" id="to"><br><br></dd>
+        <dd>TIME:<input type="time" id="time"><br><br></dd>
+        <dd>ROUTE STOPPINGS:<input type="route" id="route"><br><br></dd>
+        <form>
+        <button type="button" onclick="showAlert()">Submit</button>
+    </form> 
+    </center>
+
+    <script>
+        function showAlert() {
+            alert("Verified successfully!");
+	    window.location.href = "A1.html";
+        }
+    </script>
+</body>
+</html>

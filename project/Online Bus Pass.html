@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN LOGIN PAGE</title>
+    <style>
+    body {
+            background-image: url('Busstand.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            margin: 1;
+	    font-family: Arial, sans-serif;
+	    font-size:20px;
+ }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; /* 100% of the viewport height */
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+label {
+            color: yellow; 
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1>ONLINE BUS PASS MANAGEMENT</h1></center>
+    <form>
+        <select id="dropdown" onchange="window.location.href=this.value">
+            <option value="#">Select The login Person</option>
+            <option value="Admin.html">ADMIN</option>
+            <option value="User12.html">USER</option>
+            <option value="Tollgate.html">CONDUCTOR</option>
+        </select>
+    </form>
+
+    <script>
+        document.getElementById('dropdown').addEventListener('change', function () {
+            var selectedOption = this.options[this.selectedIndex];
+            if (selectedOption.value !== '#') {
+                window.location.href = selectedOption.value;
+            }
+        });
+    </script>
+</body>
+
+</html>

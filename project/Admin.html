@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN LOGIN PAGE</title>
+    <style>
+    body {
+            background-image: url('Busstand.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            margin: 1;
+	    font-family: Arial, sans-serif;
+	    font-size:20px;
+ }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; /* 100% of the viewport height */
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+label {
+            color: yellow; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1><center>ADMIN</center></h1>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" >
+        </div><br>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" >
+        </div><br>
+
+        <input type="submit" value="LOGIN">
+    </form>
+
+    <script>
+        document.getElementById("loginForm").onsubmit = function(event) 
+{
+            event.preventDefault(); 
+
+            var username = document.getElementById("username").value;
+
+            var password = document.getElementById("password").value;
+
+            if (username !== "" && password !== "")
+ {
+
+                window.location.href = "A1.html";
+            } else
+		 {
+               	    alert("Invalid username or password. Please try again.");
+            }
+        };
+    </script>
+</body>
+
+</html>
