@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ADMIN LOGIN PAGE</title>
+</head>
+
+<body style="background-color:yellow">
+    <center><h1>GARBAGE MANAGEMENT SYSTEM</h1><br>
+    <form>
+        <select id="dropdown" onchange="window.location.href=this.value">
+            <option value="#">Select The login Person</option>
+            <option value="Admin.html">Administrator</option>
+            <option value="Publiclog.html">General public</option>
+            <option value="Driverlog.html">Driver</option>
+        </select>
+    </form>
+</center>
+    <script>
+        document.getElementById('dropdown').addEventListener('change', function () {
+            var selectedOption = this.options[this.selectedIndex];
+            if (selectedOption.value !== '#') {
+                window.location.href = selectedOption.value;
+            }
+        });
+    </script>
+</body>
+
+</html>
